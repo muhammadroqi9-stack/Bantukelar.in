@@ -3,110 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BantuKelar.in | Premium Admin Service</title>
+    <title>BantuKelar.in | Jasa NPWP Premium & Terpercaya</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #0a0a0a; color: #f0f0f0; font-family: 'Inter', sans-serif; }
-        .bento-card { background: #141414; border: 1px solid #222; border-radius: 2rem; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); overflow: hidden; }
-        .bento-card:hover { border-color: #ffd700; transform: scale(1.02); box-shadow: 0 0 30px rgba(255, 215, 0, 0.1); }
-        .accent-gold { color: #ffd700; }
-        .bg-gold { background-color: #ffd700; }
-        .bg-grid { background-image: linear-gradient(to right, #1a1a1a 1px, transparent 1px), linear-gradient(to bottom, #1a1a1a 1px, transparent 1px); background-size: 50px 50px; }
+        :root { --bg: #080808; --card: #111; --accent: #ff0000; --text: #e0e0e0; }
+        body { background-color: var(--bg); color: var(--text); font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: 'Syne', sans-serif; }
+        .bento-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; }
+        .bento-card { background: var(--card); border: 1px solid #1a1a1a; border-radius: 2rem; padding: 2.5rem; transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); position: relative; overflow: hidden; }
+        .bento-card:hover { border-color: var(--accent); transform: translateY(-5px) scale(1.01); box-shadow: 0 10px 40px rgba(255, 0, 0, 0.1); }
+        .accent-text { color: var(--accent); }
+        .bg-grid { background-image: linear-gradient(#121212 1px, transparent 1px), linear-gradient(90deg, #121212 1px, transparent 1px); background-size: 30px 30px; }
+        .glow-text { text-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+        @media (max-width: 768px) { .bento-grid { grid-template-columns: 1fr; } .bento-card { grid-column: span 1 !important; grid-row: span 1 !important; } }
     </style>
 </head>
-<body class="bg-grid min-h-screen p-4 md:p-10">
+<body class="bg-grid min-h-screen p-4 md:p-8">
 
-    <header class="max-w-7xl mx-auto mb-12 flex justify-between items-center px-4">
-        <div class="text-2xl font-black tracking-tighter">BANTU<span class="accent-gold">KELAR.IN</span></div>
-        <div class="hidden md:flex space-x-8 text-xs font-bold tracking-[0.2em] uppercase opacity-60">
-            <a href="#layanan" class="hover:text-yellow-500">Layanan</a>
-            <a href="#alur" class="hover:text-yellow-500">SOP</a>
-            <a href="#syarat" class="hover:text-yellow-500">Syarat</a>
+    <header class="max-w-7xl mx-auto mb-16 flex justify-between items-center px-4 pt-4">
+        <div class="text-3xl font-extrabold tracking-tighter">BANTU<span class="accent-text glow-text">KELAR.IN</span></div>
+        <div class="hidden md:flex items-center space-x-2 text-xs font-bold uppercase tracking-widest opacity-60">
+            <span>Premium</span><span class="text-white/20">|</span><span>Fast</span><span class="text-white/20">|</span><span>Secure</span>
         </div>
-        <a href="https://wa.me/6281229712061" class="bg-gold text-black px-6 py-2 rounded-full font-black text-xs uppercase">Order Now</a>
+        <a href="https://wa.me/6281229712061" class="border border-white/10 hover:border-accent-text px-8 py-3 rounded-full font-bold text-xs uppercase transition-all hover:bg-accent hover:text-white">Order via WA</a>
     </header>
 
-    <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
+    <main class="max-w-7xl mx-auto bento-grid">
         
-        <div class="bento-card col-span-1 md:col-span-8 p-12 flex flex-col justify-center relative">
-            <div class="absolute top-8 right-8 opacity-10 font-black text-8xl">TAX</div>
-            <span class="text-yellow-500 font-mono text-sm mb-4 tracking-widest">// OFFICIAL ADMINISTRATIVE PARTNER</span>
-            <h2 class="text-5xl md:text-8xl font-black leading-[0.9] mb-6">SOLUSI <br> <span class="accent-gold italic text-outline">BIROKRASI.</span></h2>
-            <p class="text-gray-500 max-w-lg text-lg leading-relaxed">Kami mengurus NPWP Anda dengan standar profesional tinggi. Cepat, aman, dan tanpa perlu keluar rumah.</p>
-        </div>
-
-        <div class="bento-card col-span-1 md:col-span-4 p-8 flex flex-col justify-between border-l-4 border-l-yellow-500">
-            <h3 class="text-xs font-black tracking-widest opacity-40 uppercase mb-6">Fixed Price</h3>
-            <div class="space-y-6">
-                <div class="flex justify-between items-end border-b border-white/5 pb-2">
-                    <div><p class="font-bold">Paket Kilat</p><p class="text-[10px] opacity-50">NPWP PRIBADI</p></div>
-                    <p class="text-2xl font-black accent-gold">25K</p>
-                </div>
-                <div class="flex justify-between items-end border-b border-white/5 pb-2">
-                    <div><p class="font-bold">Paket Mantap</p><p class="text-[10px] opacity-50">NPWP + EFIN</p></div>
-                    <p class="text-2xl font-black accent-gold">45K</p>
-                </div>
-                <div class="flex justify-between items-end border-b border-white/5 pb-2">
-                    <div><p class="font-bold">Paket Usaha</p><p class="text-[10px] opacity-50">NPWP + NIB OSS</p></div>
-                    <p class="text-2xl font-black accent-gold">75K</p>
-                </div>
-            </div>
-            <p class="mt-6 text-[10px] opacity-40 italic font-mono">*Bayar setelah NPWP Elektronik terbit.</p>
-        </div>
-
-        <div id="alur" class="bento-card col-span-1 md:col-span-5 p-10">
-            <h3 class="accent-gold font-black text-xl mb-8 uppercase tracking-tighter italic">Workflow Standard</h3>
-            <div class="space-y-6">
-                <div class="flex gap-4">
-                    <span class="font-black text-white/20 text-3xl">01</span>
-                    <p class="text-sm"><b class="block text-white">Data Submission</b> Kirim foto KTP & KK via WhatsApp Admin.</p>
-                </div>
-                <div class="flex gap-4">
-                    <span class="font-black text-white/20 text-3xl">02</span>
-                    <p class="text-sm"><b class="block text-white">Digital Processing</b> Tim kami memproses pendaftaran secara real-time.</p>
-                </div>
-                <div class="flex gap-4">
-                    <span class="font-black text-white/20 text-3xl">03</span>
-                    <p class="text-sm"><b class="block text-white">Verification</b> Input kode OTP yang masuk ke perangkat Anda.</p>
-                </div>
-                <div class="flex gap-4 text-yellow-500">
-                    <span class="font-black text-3xl">04</span>
-                    <p class="text-sm"><b class="block">Instant Delivery</b> Terima NPWP (PDF) & lakukan pembayaran.</p>
-                </div>
+        <div class="bento-card col-span-8 row-span-2 flex flex-col justify-center bg-[#0d0d0d]">
+            <div class="absolute -bottom-10 -right-10 opacity-5 font-black text-[15rem] text-white">NPWP</div>
+            <span class="accent-text font-mono text-sm mb-4 tracking-widest uppercase glow-text">// Jasa Pembuatan NPWP Profesional</span>
+            <h1 class="text-5xl md:text-8xl font-black leading-[0.95] mb-8 tracking-tighter text-white">Urus <span class="italic text-white/50">Legalitas</span><br> Gak Pakai Ribet.</h1>
+            <p class="text-gray-400 max-w-xl text-lg leading-relaxed mb-10">Layanan aktivasi NPWP Pribadi & Badan dengan standar operasional tinggi. Cepat, aman, dan 100% online. Cukup kirim data via WhatsApp, kami yang kelar-in.</p>
+            <div class="flex space-x-4">
+                <a href="#alur" class="bg-white text-black px-10 py-4 rounded-xl font-bold text-sm uppercase hover:bg-accent hover:text-white transition-all">Lihat Cara Kerja</a>
+                <a href="#harga" class="border border-white/10 px-10 py-4 rounded-xl font-bold text-sm uppercase hover:border-accent hover:accent-text transition-all">Daftar Harga</a>
             </div>
         </div>
 
-        <div id="syarat" class="bento-card col-span-1 md:col-span-4 p-10 bg-white text-black">
-            <h3 class="font-black text-xl mb-6 uppercase italic">Requirements</h3>
-            <ul class="space-y-4 font-bold text-sm">
-                <li class="flex items-center gap-2 border-b border-black/10 pb-2">✓ Foto KTP Asli (Jernih)</li>
-                <li class="flex items-center gap-2 border-b border-black/10 pb-2">✓ Nomor Kartu Keluarga</li>
-                <li class="flex items-center gap-2 border-b border-black/10 pb-2">✓ Email Aktif & Belum Terdaftar</li>
-                <li class="flex items-center gap-2 border-b border-black/10 pb-2">✓ No. HP (Bisa Terima SMS)</li>
+        <div class="bento-card col-span-4 row-span-1 border-l-4 border-l-accent flex flex-col justify-between">
+            <h3 class="text-xl font-extrabold tracking-tight mb-4">Layanan Utama</h3>
+            <ul class="space-y-3 text-sm opacity-80 uppercase tracking-wider font-medium">
+                <li>• NPWP Pribadi Karyawan</li>
+                <li>• NPWP Pribadi Wiraswasta</li>
+                <li>• NPWP Istri (Pisah Harta)</li>
+                <li>• Aktivasi EFIN</li>
+                <li>• Pembuatan NIB (OSS)</li>
             </ul>
-            <div class="mt-10 p-4 border-2 border-black rounded-xl">
-                <p class="text-[10px] uppercase font-black tracking-widest leading-tight">Privacy Policy: Data akan segera dihapus setelah proses selesai.</p>
+        </div>
+
+        <div class="bento-card col-span-4 row-span-1 bg-accent text-white flex flex-col items-center justify-center text-center">
+            <svg class="w-16 h-16 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            <h3 class="text-2xl font-extrabold mb-2">100% AMANAH</h3>
+            <p class="text-xs uppercase font-bold tracking-widest opacity-80">Bayar Setelah NPWP Jadi</p>
+        </div>
+
+        <div id="harga" class="bento-card col-span-6 p-10 flex flex-col justify-between">
+            <h3 class="accent-text font-extrabold text-2xl mb-8 uppercase tracking-tighter italic glow-text">Price List // Promo Gila</h3>
+            <div class="space-y-6">
+                <div class="flex justify-between items-center border-b border-white/5 pb-4">
+                    <div>
+                        <p class="font-bold text-lg text-white">Paket KILAT</p>
+                        <p class="text-xs text-gray-500 max-w-xs">NPWP Pribadi (Karyawan/Wiraswasta) + File PDF Asli</p>
+                    </div>
+                    <p class="text-4xl font-black accent-text glow-text">25K</p>
+                </div>
+                <div class="flex justify-between items-center border-b border-white/5 pb-4 hover:border-accent">
+                    <div>
+                        <p class="font-bold text-lg text-white">Paket MANTAP</p>
+                        <p class="text-xs text-gray-500 max-w-xs">NPWP Pribadi + Aktivasi EFIN (Siap Lapor Pajak)</p>
+                    </div>
+                    <p class="text-4xl font-black accent-text glow-text">45K</p>
+                </div>
+                <div class="flex justify-between items-center border-b border-white/5 pb-4">
+                    <div>
+                        <p class="font-bold text-lg text-white">Paket USAHA</p>
+                        <p class="text-xs text-gray-500 max-w-xs">NPWP + Pembuatan NIB (Legalitas Usaha OSS)</p>
+                    </div>
+                    <p class="text-4xl font-black accent-text glow-text">75K</p>
+                </div>
+            </div>
+            <div class="mt-8 p-4 bg-white/5 rounded-xl text-center">
+                <p class="text-sm font-medium text-gray-400">✅ Proses Cepat (Estimasi 30 Menit)</p>
             </div>
         </div>
 
-        <div class="bento-card col-span-1 md:col-span-3 p-10 flex flex-col justify-between items-center text-center bg-yellow-500 text-black">
-            <div class="w-16 h-16 bg-black/10 rounded-full flex items-center justify-center mb-4">
-                <svg fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.006.332.013c.105.007.25-.039.395.303.148.35.506 1.234.55 1.323.044.09.073.194.015.311-.058.116-.087.188-.173.289-.087.1-.183.223-.261.303-.092.094-.188.197-.081.379.107.182.475.782.1.379.107.182.475.782 1.02 1.268.694.617 1.279.81 1.467.901.188.09.3.076.415-.054.116-.13.504-.585.641-.787.137-.202.274-.17.462-.1.188.07 1.197.564 1.403.669.207.105.344.156.395.242.05.086.05.498-.094.903z"/></svg>
+        <div id="syarat" class="bento-card col-span-6 p-10 bg-white text-black">
+            <h3 class="font-black text-2xl mb-8 uppercase italic tracking-tight">Persyaratan <span class="accent-text">(Wajib Lengkap)</span></h3>
+            <div class="grid grid-cols-2 gap-x-8 gap-y-6 text-sm font-bold">
+                <div class="flex items-start gap-3">
+                    <span class="text-accent text-lg">→</span>
+                    <p><b>Foto KTP Asli</b><br><span class="text-xs opacity-70 font-medium">Harus Jernih, Tidak Buram, Tidak Terpotong, & Tidak Silau.</span></p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-accent text-lg">→</span>
+                    <p><b>Nomor KK</b><br><span class="text-xs opacity-70 font-medium">Untuk Sinkronisasi Data Kependudukan (Dukcapil).</span></p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-accent text-lg">→</span>
+                    <p><b>Email Aktif</b><br><span class="text-xs opacity-70 font-medium">Belum Pernah Terdaftar di Sistem ereg.pajak.go.id.</span></p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-accent text-lg">→</span>
+                    <p><b>No. HP Aktif</b><br><span class="text-xs opacity-70 font-medium">Bisa Menerima SMS Kode OTP Verifikasi secara Real-time.</span></p>
+                </div>
             </div>
-            <h4 class="font-black text-xl uppercase">Fast Response</h4>
-            <p class="text-xs font-bold mt-2 opacity-70 italic">Online 08.00 - 22.00</p>
-            <a href="https://wa.me/6281229712061" class="mt-6 bg-black text-white px-8 py-3 rounded-full font-black text-sm uppercase">Chat Admin</a>
+            <div class="mt-10 p-5 border border-black/10 bg-black/5 rounded-2xl flex items-center gap-4">
+                <svg class="w-10 h-10 accent-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                <p class="text-xs font-medium leading-relaxed"><b>PRIVACY GUARANTEED:</b> Kami menjamin keamanan data sensitif Anda. Foto KTP & KK langsung dihapus permanen setelah NPWP Elektronik berhasil diterbitkan.</p>
+            </div>
+        </div>
+
+        <div id="alur" class="bento-card col-span-12 p-12">
+            <h3 class="accent-text font-black text-3xl mb-12 uppercase tracking-tighter italic text-center glow-text">Alur Kerja Profesional (SOP)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                <div class="text-center flex flex-col items-center">
+                    <div class="w-16 h-16 bg-[#1a1a1a] rounded-full flex items-center justify-center font-black text-3xl mb-6 border border-white/5 hover:border-accent hover:accent-text transition-all">1</div>
+                    <p class="font-bold text-white mb-2">Konsultasi & Kirim Data</p>
+                    <p class="text-xs text-gray-500">Isi form & kirim foto KTP/KK via WhatsApp ke Admin.</p>
+                </div>
+                <div class="text-center flex flex-col items-center">
+                    <div class="w-16 h-16 bg-[#1a1a1a] rounded-full flex items-center justify-center font-black text-3xl mb-6 border border-white/5">2</div>
+                    <p class="font-bold text-white mb-2">Proses Registrasi</p>
+                    <p class="text-xs text-gray-500">Tim menginput data ke sistem ereg Pajak secara manual.</p>
+                </div>
+                <div class="text-center flex flex-col items-center">
+                    <div class="w-16 h-16 bg-[#1a1a1a] rounded-full flex items-center justify-center font-black text-3xl mb-6 border border-white/5">3</div>
+                    <p class="font-bold text-white mb-2">Verifikasi OTP</p>
+                    <p class="text-xs text-gray-500">Klien memberikan kode OTP yang masuk ke Email/HP.</p>
+                </div>
+                <div class="text-center flex flex-col items-center">
+                    <div class="w-16 h-16 bg-[#1a1a1a] rounded-full flex items-center justify-center font-black text-3xl mb-6 border border-white/5 hover:border-accent hover:accent-text transition-all">4</div>
+                    <p class="font-bold text-white mb-2">Penerbitan NPWP</p>
+                    <p class="text-xs text-gray-500">NPWP Elektronik (PDF) terbit & dikirim ke WhatsApp Anda.</p>
+                </div>
+                <div class="text-center flex flex-col items-center text-accent">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center font-black text-3xl mb-6 text-white glow-text">5</div>
+                    <p class="font-bold mb-2">Pembayaran Akhir</p>
+                    <p class="text-xs accent-text">Klien melakukan pembayaran setelah NPWP berhasil diterbitkan.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bento-card col-span-12 bg-[#0d0d0d] p-16 flex flex-col items-center justify-center text-center">
+            <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tighter text-white">Siap Bikin NPWP?<br> Hubungi Kami <span class="italic text-accent glow-text">Sekarang.</span></h2>
+            <p class="text-gray-500 mb-10 max-w-lg text-lg">Pengerjaan kilat 30-60 menit (tergantung server pajak). Tanya dulu? Gratis.</p>
+            <a href="https://wa.me/6281229712061" class="bg-accent text-white px-12 py-5 rounded-2xl font-black text-xl uppercase tracking-wider hover:scale-105 transition-all glow-text">CHAT WA: 0812-2971-2061</a>
+            <p class="mt-8 text-xs font-medium text-gray-700 uppercase tracking-widest">Online: 08.00 - 22.00 // Fast Response</p>
         </div>
 
     </main>
 
-    <footer class="max-w-7xl mx-auto mt-20 pb-10 flex flex-col md:flex-row justify-between items-center px-4 border-t border-white/5 pt-10 text-[10px] font-bold tracking-[0.3em] uppercase opacity-30">
-        <p>© 2026 BANTUKELAR.IN - ALL RIGHTS RESERVED</p>
-        <div class="flex space-x-6 mt-4 md:mt-0">
-            <span>Security Verified</span>
-            <span>Speed Guaranteed</span>
-        </div>
+    <footer class="max-w-7xl mx-auto mt-16 mb-10 text-center text-gray-800 text-[10px] font-bold tracking-[0.4em] uppercase">
+        &copy; 2026 BANTUKELAR.IN - PREMIUM ADMINISTRATIVE SERVICE // SAT-SET, AMAN, TERPERCAYA
     </footer>
 
 </body>
