@@ -3,76 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BantuKelar.in | Jasa NPWP Profesional</title>
+    <title>BantuKelar.in | Premium Admin Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #121212; color: #e0e0e0; font-family: 'Inter', sans-serif; }
-        .bento-card { background: #1e1e1e; border: 1px solid #333; border-radius: 1.5rem; transition: all 0.3s ease; }
-        .bento-card:hover { border-color: #ffd700; transform: translateY(-5px); }
-        .accent-text { color: #ffd700; }
-        .bg-industrial { background-image: radial-gradient(circle at 2px 2px, #252525 1px, transparent 0); background-size: 40px 40px; }
+        body { background-color: #0a0a0a; color: #f0f0f0; font-family: 'Inter', sans-serif; }
+        .bento-card { background: #141414; border: 1px solid #222; border-radius: 2rem; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); overflow: hidden; }
+        .bento-card:hover { border-color: #ffd700; transform: scale(1.02); box-shadow: 0 0 30px rgba(255, 215, 0, 0.1); }
+        .accent-gold { color: #ffd700; }
+        .bg-gold { background-color: #ffd700; }
+        .bg-grid { background-image: linear-gradient(to right, #1a1a1a 1px, transparent 1px), linear-gradient(to bottom, #1a1a1a 1px, transparent 1px); background-size: 50px 50px; }
     </style>
 </head>
-<body class="bg-industrial min-h-screen p-6">
+<body class="bg-grid min-h-screen p-4 md:p-10">
 
-    <header class="max-w-6xl mx-auto mb-10 flex justify-between items-center">
-        <h1 class="text-2xl font-bold tracking-tighter">BANTU<span class="accent-text">KELAR.IN</span></h1>
-        <nav class="hidden md:block text-sm uppercase tracking-widest space-x-6">
-            <a href="https://wa.me/6281229712061" class="bg-white text-black px-4 py-2 rounded-full font-bold">WhatsApp Admin</a>
-        </nav>
+    <header class="max-w-7xl mx-auto mb-12 flex justify-between items-center px-4">
+        <div class="text-2xl font-black tracking-tighter">BANTU<span class="accent-gold">KELAR.IN</span></div>
+        <div class="hidden md:flex space-x-8 text-xs font-bold tracking-[0.2em] uppercase opacity-60">
+            <a href="#layanan" class="hover:text-yellow-500">Layanan</a>
+            <a href="#alur" class="hover:text-yellow-500">SOP</a>
+            <a href="#syarat" class="hover:text-yellow-500">Syarat</a>
+        </div>
+        <a href="https://wa.me/6281229712061" class="bg-gold text-black px-6 py-2 rounded-full font-black text-xs uppercase">Order Now</a>
     </header>
 
-    <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-4">
+    <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
         
-        <div class="bento-card col-span-1 md:col-span-3 md:row-span-2 p-10 flex flex-col justify-center">
-            <span class="text-yellow-500 font-mono mb-2">// SOLUSI BIROKRASI SAT-SET</span>
-            <h2 class="text-5xl md:text-7xl font-black mb-6 leading-none">NPWP GAK PAKAI <br><span class="accent-text">RIBET.</span></h2>
-            <p class="text-gray-400 max-w-md text-lg">Urus legalitas tanpa antre. Cukup kirim data via WA, duduk manis, terima jadi. Aman dan terpercaya.</p>
+        <div class="bento-card col-span-1 md:col-span-8 p-12 flex flex-col justify-center relative">
+            <div class="absolute top-8 right-8 opacity-10 font-black text-8xl">TAX</div>
+            <span class="text-yellow-500 font-mono text-sm mb-4 tracking-widest">// OFFICIAL ADMINISTRATIVE PARTNER</span>
+            <h2 class="text-5xl md:text-8xl font-black leading-[0.9] mb-6">SOLUSI <br> <span class="accent-gold italic text-outline">BIROKRASI.</span></h2>
+            <p class="text-gray-500 max-w-lg text-lg leading-relaxed">Kami mengurus NPWP Anda dengan standar profesional tinggi. Cepat, aman, dan tanpa perlu keluar rumah.</p>
         </div>
 
-        <div class="bento-card p-8 flex flex-col justify-between">
-            <div>
-                <h3 class="text-xl font-bold italic">PAKET KILAT</h3>
-                <p class="text-sm text-gray-500">NPWP Pribadi</p>
+        <div class="bento-card col-span-1 md:col-span-4 p-8 flex flex-col justify-between border-l-4 border-l-yellow-500">
+            <h3 class="text-xs font-black tracking-widest opacity-40 uppercase mb-6">Fixed Price</h3>
+            <div class="space-y-6">
+                <div class="flex justify-between items-end border-b border-white/5 pb-2">
+                    <div><p class="font-bold">Paket Kilat</p><p class="text-[10px] opacity-50">NPWP PRIBADI</p></div>
+                    <p class="text-2xl font-black accent-gold">25K</p>
+                </div>
+                <div class="flex justify-between items-end border-b border-white/5 pb-2">
+                    <div><p class="font-bold">Paket Mantap</p><p class="text-[10px] opacity-50">NPWP + EFIN</p></div>
+                    <p class="text-2xl font-black accent-gold">45K</p>
+                </div>
+                <div class="flex justify-between items-end border-b border-white/5 pb-2">
+                    <div><p class="font-bold">Paket Usaha</p><p class="text-[10px] opacity-50">NPWP + NIB OSS</p></div>
+                    <p class="text-2xl font-black accent-gold">75K</p>
+                </div>
             </div>
-            <p class="text-3xl font-black accent-text">Rp25k</p>
+            <p class="mt-6 text-[10px] opacity-40 italic font-mono">*Bayar setelah NPWP Elektronik terbit.</p>
         </div>
 
-        <div class="bento-card p-8 flex flex-col justify-between">
-            <div>
-                <h3 class="text-xl font-bold italic">PAKET MANTAP</h3>
-                <p class="text-sm text-gray-500">NPWP + EFIN</p>
+        <div id="alur" class="bento-card col-span-1 md:col-span-5 p-10">
+            <h3 class="accent-gold font-black text-xl mb-8 uppercase tracking-tighter italic">Workflow Standard</h3>
+            <div class="space-y-6">
+                <div class="flex gap-4">
+                    <span class="font-black text-white/20 text-3xl">01</span>
+                    <p class="text-sm"><b class="block text-white">Data Submission</b> Kirim foto KTP & KK via WhatsApp Admin.</p>
+                </div>
+                <div class="flex gap-4">
+                    <span class="font-black text-white/20 text-3xl">02</span>
+                    <p class="text-sm"><b class="block text-white">Digital Processing</b> Tim kami memproses pendaftaran secara real-time.</p>
+                </div>
+                <div class="flex gap-4">
+                    <span class="font-black text-white/20 text-3xl">03</span>
+                    <p class="text-sm"><b class="block text-white">Verification</b> Input kode OTP yang masuk ke perangkat Anda.</p>
+                </div>
+                <div class="flex gap-4 text-yellow-500">
+                    <span class="font-black text-3xl">04</span>
+                    <p class="text-sm"><b class="block">Instant Delivery</b> Terima NPWP (PDF) & lakukan pembayaran.</p>
+                </div>
             </div>
-            <p class="text-3xl font-black accent-text">Rp45k</p>
         </div>
 
-        <div class="bento-card col-span-1 md:col-span-2 p-8 flex items-center justify-around text-center">
-            <div><p class="text-3xl font-bold">100%</p><p class="text-xs text-gray-500 uppercase">Amanah</p></div>
-            <div class="border-l border-gray-700 h-10"></div>
-            <div><p class="text-3xl font-bold">30mnt</p><p class="text-xs text-gray-500 uppercase">Proses</p></div>
-            <div class="border-l border-gray-700 h-10"></div>
-            <div><p class="text-3xl font-bold">Bayar</p><p class="text-xs text-gray-500 uppercase">Pas Jadi</p></div>
-        </div>
-
-        <div class="bento-card bg-white p-8 flex flex-col justify-center items-center text-black">
-            <p class="font-bold mb-4 italic text-sm">Butuh NPWP Sekarang?</p>
-            <a href="https://wa.me/6281229712061" class="text-center font-black text-2xl hover:underline">HUBUNGI WA →</a>
-        </div>
-
-        <div class="bento-card col-span-1 md:col-span-1 p-8">
-            <h4 class="font-bold mb-4 accent-text">SERVICES</h4>
-            <ul class="text-xs space-y-2 opacity-80 uppercase tracking-tighter">
-                <li>• Buat NPWP Baru</li>
-                <li>• Aktivasi EFIN</li>
-                <li>• Cetak NIB OSS</li>
-                <li>• Ubah Data Pajak</li>
+        <div id="syarat" class="bento-card col-span-1 md:col-span-4 p-10 bg-white text-black">
+            <h3 class="font-black text-xl mb-6 uppercase italic">Requirements</h3>
+            <ul class="space-y-4 font-bold text-sm">
+                <li class="flex items-center gap-2 border-b border-black/10 pb-2">✓ Foto KTP Asli (Jernih)</li>
+                <li class="flex items-center gap-2 border-b border-black/10 pb-2">✓ Nomor Kartu Keluarga</li>
+                <li class="flex items-center gap-2 border-b border-black/10 pb-2">✓ Email Aktif & Belum Terdaftar</li>
+                <li class="flex items-center gap-2 border-b border-black/10 pb-2">✓ No. HP (Bisa Terima SMS)</li>
             </ul>
+            <div class="mt-10 p-4 border-2 border-black rounded-xl">
+                <p class="text-[10px] uppercase font-black tracking-widest leading-tight">Privacy Policy: Data akan segera dihapus setelah proses selesai.</p>
+            </div>
+        </div>
+
+        <div class="bento-card col-span-1 md:col-span-3 p-10 flex flex-col justify-between items-center text-center bg-yellow-500 text-black">
+            <div class="w-16 h-16 bg-black/10 rounded-full flex items-center justify-center mb-4">
+                <svg fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.006.332.013c.105.007.25-.039.395.303.148.35.506 1.234.55 1.323.044.09.073.194.015.311-.058.116-.087.188-.173.289-.087.1-.183.223-.261.303-.092.094-.188.197-.081.379.107.182.475.782.1.379.107.182.475.782 1.02 1.268.694.617 1.279.81 1.467.901.188.09.3.076.415-.054.116-.13.504-.585.641-.787.137-.202.274-.17.462-.1.188.07 1.197.564 1.403.669.207.105.344.156.395.242.05.086.05.498-.094.903z"/></svg>
+            </div>
+            <h4 class="font-black text-xl uppercase">Fast Response</h4>
+            <p class="text-xs font-bold mt-2 opacity-70 italic">Online 08.00 - 22.00</p>
+            <a href="https://wa.me/6281229712061" class="mt-6 bg-black text-white px-8 py-3 rounded-full font-black text-sm uppercase">Chat Admin</a>
         </div>
 
     </main>
 
-    <footer class="max-w-6xl mx-auto mt-10 text-center text-gray-600 text-xs tracking-widest uppercase">
-        &copy; 2026 BANTUKELAR.IN - PREMIUM ADMINISTRATIVE SERVICE
+    <footer class="max-w-7xl mx-auto mt-20 pb-10 flex flex-col md:flex-row justify-between items-center px-4 border-t border-white/5 pt-10 text-[10px] font-bold tracking-[0.3em] uppercase opacity-30">
+        <p>© 2026 BANTUKELAR.IN - ALL RIGHTS RESERVED</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+            <span>Security Verified</span>
+            <span>Speed Guaranteed</span>
+        </div>
     </footer>
 
 </body>
